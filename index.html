@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
+<html lang="fr"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Venance Houndété — Expert Cybersécurité</title>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,700;0,900;1,400;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
 <style>
 :root{
   --navy:#0A1628;--navy2:#0F1F38;--navy3:#162947;
@@ -19,7 +17,6 @@ body{background:var(--navy);color:var(--text);font-family:var(--f-body);font-wei
 body::after{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;
   background:radial-gradient(ellipse 60% 40% at 80% 10%,rgba(201,168,76,.07) 0%,transparent 60%),
              radial-gradient(ellipse 50% 60% at 10% 80%,rgba(201,168,76,.05) 0%,transparent 60%)}
-/* NAV */
 nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:center;justify-content:space-between;padding:0 60px;height:70px;background:rgba(10,22,40,.93);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
 .nav-brand{font-family:var(--f-head);font-size:20px;font-weight:700;color:var(--white)}
 .nav-brand span{color:var(--gold)}
@@ -29,7 +26,6 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:cen
 .lang-toggle{display:flex;background:var(--navy3);border:1px solid var(--border);border-radius:20px;overflow:hidden;margin-left:16px}
 .lang-btn{font-family:var(--f-body);font-size:12px;font-weight:600;padding:6px 14px;background:transparent;color:var(--gray);border:none;cursor:pointer;transition:background .2s,color .2s}
 .lang-btn.active{background:var(--gold);color:var(--navy);border-radius:20px}
-/* HERO */
 #hero{min-height:100vh;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:60px;padding:100px 60px 60px;position:relative;z-index:1}
 .hero-eyebrow{display:inline-flex;align-items:center;gap:10px;background:rgba(201,168,76,.12);border:1px solid rgba(201,168,76,.3);border-radius:30px;padding:6px 16px;font-size:12px;font-weight:600;color:var(--gold);letter-spacing:1px;text-transform:uppercase;margin-bottom:28px}
 .hero-eyebrow::before{content:'●';font-size:8px;animation:blink 2s infinite}
@@ -51,24 +47,19 @@ nav{position:fixed;top:0;left:0;right:0;z-index:900;display:flex;align-items:cen
 .stat-num{font-family:var(--f-head);font-size:48px;font-weight:900;color:var(--gold);line-height:1}
 .stat-label{font-size:13px;color:var(--gray);margin-top:6px;line-height:1.4}
 .stat-icon{font-size:28px;margin-bottom:12px}
-/* SECTIONS */
 section{padding:96px 60px;position:relative;z-index:1}
 section:nth-child(even){background:var(--navy2)}
 .s-tag{display:inline-block;font-size:11px;font-weight:700;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
 .s-title{font-family:var(--f-head);font-size:clamp(28px,3.5vw,48px);font-weight:700;color:var(--white);line-height:1.15;letter-spacing:-1px;margin-bottom:16px}
 .s-sub{font-size:16px;color:var(--gray);max-width:560px;line-height:1.7;margin-bottom:56px}
-/* ABOUT */
 .about-layout{display:grid;grid-template-columns:3fr 2fr;gap:64px;align-items:start}
 .about-body{font-size:16px;line-height:1.9;color:var(--text)}
 .about-body p{margin-bottom:20px}
-.about-body strong{color:var(--white);font-weight:600}
-.hl{color:var(--gold);font-weight:600}
 .info-list{display:flex;flex-direction:column;gap:12px}
 .info-item{background:var(--navy3);border:1px solid var(--border);border-radius:var(--r);padding:16px 20px;transition:border-color .25s}
 .info-item:hover{border-color:rgba(201,168,76,.35)}
 .info-label{font-size:11px;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:1.5px;margin-bottom:4px}
 .info-val{font-size:14px;color:var(--text)}
-/* SERVICES */
 .services-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
 .service-card{background:var(--navy3);border:1px solid var(--border);border-radius:var(--r);padding:32px;transition:border-color .3s,transform .3s,box-shadow .3s;position:relative;overflow:hidden}
 .service-card::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--gold2));transform:scaleX(0);transform-origin:left;transition:transform .35s}
@@ -78,7 +69,6 @@ section:nth-child(even){background:var(--navy2)}
 .svc-line{width:32px;height:2px;background:var(--gold);margin-bottom:16px}
 .svc-name{font-family:var(--f-head);font-size:20px;font-weight:700;color:var(--white);margin-bottom:10px}
 .svc-text{font-size:14px;color:var(--gray);line-height:1.75}
-/* PROJECTS */
 .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(360px,1fr));gap:24px}
 .project-card{background:var(--navy2);border:1px solid var(--border);border-radius:var(--r);padding:36px;position:relative;overflow:hidden;transition:border-color .3s,transform .3s,box-shadow .3s}
 .project-card:hover{border-color:rgba(201,168,76,.4);transform:translateY(-4px);box-shadow:0 24px 48px rgba(0,0,0,.35)}
@@ -91,7 +81,6 @@ section:nth-child(even){background:var(--navy2)}
 .p-list li::before{content:'→';position:absolute;left:0;color:var(--gold);font-size:12px;top:6px}
 .p-chips{display:flex;flex-wrap:wrap;gap:8px}
 .chip{font-size:11px;font-weight:600;padding:4px 12px;border-radius:20px;background:rgba(201,168,76,.1);color:var(--gold);border:1px solid rgba(201,168,76,.2)}
-/* SKILLS */
 .skills-layout{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:36px}
 .sk-group-name{font-size:12px;font-weight:700;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:20px;padding-bottom:12px;border-bottom:1px solid var(--border)}
 .sk-row{margin-bottom:16px}
@@ -105,7 +94,6 @@ section:nth-child(even){background:var(--navy2)}
 .tools-chips{display:flex;flex-wrap:wrap;gap:10px}
 .tool{font-size:13px;font-weight:500;padding:8px 18px;border-radius:30px;background:var(--navy2);border:1px solid var(--border);color:var(--gray);transition:all .25s;cursor:default}
 .tool:hover{border-color:var(--gold);color:var(--gold)}
-/* PARCOURS */
 .parcours-layout{display:grid;grid-template-columns:1fr 1fr;gap:56px}
 .pc-title{font-size:12px;font-weight:700;color:var(--gold);letter-spacing:1.5px;text-transform:uppercase;margin-bottom:32px}
 .timeline{position:relative;padding-left:28px}
@@ -115,23 +103,23 @@ section:nth-child(even){background:var(--navy2)}
 .tl-date{font-size:11px;color:var(--gold);font-weight:600;letter-spacing:1px;margin-bottom:6px}
 .tl-name{font-family:var(--f-head);font-size:17px;font-weight:700;color:var(--white);margin-bottom:4px}
 .tl-sub{font-size:13px;color:var(--gray);line-height:1.6}
-/* CONTACT */
 #contact{text-align:center}
 .contact-desc{font-size:17px;color:var(--text);max-width:520px;margin:0 auto 48px;line-height:1.8}
 .contact-grid{display:flex;justify-content:center;flex-wrap:wrap;gap:16px}
 .contact-card{display:flex;align-items:center;gap:12px;background:var(--navy2);border:1px solid var(--border);border-radius:var(--r);padding:16px 24px;text-decoration:none;color:var(--text);font-size:14px;font-weight:500;transition:all .25s}
 .contact-card:hover{border-color:var(--gold);color:var(--gold);background:rgba(201,168,76,.05);transform:translateY(-2px)}
 .contact-card svg{width:18px;height:18px;flex-shrink:0}
-/* FOOTER */
 footer{background:var(--navy);border-top:1px solid var(--border);padding:28px 60px;display:flex;justify-content:space-between;align-items:center;font-size:13px;color:var(--gray);position:relative;z-index:1}
 footer em{color:var(--gold);font-style:normal}
-/* ADMIN BTN */
-#admin-trigger{position:fixed;bottom:28px;right:28px;width:48px;height:48px;background:var(--navy2);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:800;opacity:.3;transition:opacity .3s,border-color .3s,transform .3s;font-size:18px}
+
+/* ADMIN BUTTON */
+#admin-trigger{position:fixed;bottom:28px;right:28px;width:48px;height:48px;background:var(--navy2);border:1px solid var(--border);border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:pointer;z-index:800;opacity:.35;transition:opacity .3s,border-color .3s,transform .3s;font-size:18px;user-select:none}
 #admin-trigger:hover{opacity:1;border-color:var(--gold);transform:scale(1.1)}
+
 /* OVERLAY */
 #admin-overlay{display:none;position:fixed;inset:0;z-index:9000;background:rgba(0,0,0,.75);backdrop-filter:blur(8px);justify-content:center;align-items:center}
 #admin-overlay.open{display:flex}
-#admin-panel{background:var(--navy2);border:1px solid var(--border);border-radius:16px;width:min(92vw,900px);max-height:90vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 40px 80px rgba(0,0,0,.6)}
+#admin-panel{background:var(--navy2);border:1px solid var(--border);border-radius:16px;width:min(94vw,920px);max-height:92vh;overflow:hidden;display:flex;flex-direction:column;box-shadow:0 40px 80px rgba(0,0,0,.6)}
 .adm-hd{display:flex;align-items:center;justify-content:space-between;padding:20px 28px;border-bottom:1px solid var(--border);background:var(--navy3)}
 .adm-title{font-family:var(--f-head);font-size:20px;font-weight:700;color:var(--white)}
 .adm-close{width:34px;height:34px;display:flex;align-items:center;justify-content:center;background:transparent;border:1px solid var(--border);border-radius:50%;color:var(--gray);cursor:pointer;font-size:18px;transition:all .2s}
@@ -151,8 +139,9 @@ footer em{color:var(--gold);font-style:normal}
 .f-ta{min-height:90px;resize:vertical}
 .f-hint{font-size:12px;color:var(--gray)}
 .ab{display:inline-flex;align-items:center;gap:8px;font-family:var(--f-body);font-size:13px;font-weight:700;padding:11px 22px;border-radius:8px;cursor:pointer;border:none;transition:all .2s}
+.ab:disabled{opacity:.5;cursor:not-allowed}
 .ab-gold{background:var(--gold);color:var(--navy)}
-.ab-gold:hover{background:var(--gold2)}
+.ab-gold:hover:not(:disabled){background:var(--gold2)}
 .ab-2nd{background:var(--navy3);color:var(--text);border:1px solid var(--border)}
 .ab-2nd:hover{border-color:var(--gold);color:var(--gold)}
 .ab-del{background:rgba(255,80,80,.12);color:#FF6060;border:1px solid rgba(255,80,80,.25)}
@@ -162,19 +151,34 @@ footer em{color:var(--gold);font-style:normal}
 .item-e{display:flex;align-items:center;justify-content:space-between;background:var(--navy3);border:1px solid var(--border);border-radius:8px;padding:14px 18px}
 .item-e-name{font-size:14px;color:var(--white);font-weight:500}
 .item-e-sub{font-size:12px;color:var(--gray);margin-top:2px}
-.item-e-acts{display:flex;gap:8px}
 .ib{font-size:12px;padding:5px 12px;border-radius:6px;cursor:pointer;border:1px solid var(--border);background:transparent;color:var(--gray);transition:all .2s}
 .ib:hover{border-color:var(--gold);color:var(--gold)}
 .ib.del:hover{border-color:#FF6060;color:#FF6060}
+
 /* LOGIN */
 #adm-login{display:flex;flex-direction:column;align-items:center;gap:20px;padding:48px 28px;text-align:center}
 .lg-title{font-family:var(--f-head);font-size:24px;font-weight:700;color:var(--white)}
-.lg-sub{font-size:14px;color:var(--gray)}
-.lg-form{display:flex;flex-direction:column;gap:14px;width:100%;max-width:320px}
+.lg-sub{font-size:14px;color:var(--gray);max-width:380px}
+.lg-form{display:flex;flex-direction:column;gap:14px;width:100%;max-width:340px}
 .lg-err{font-size:13px;color:#FF6060;display:none}
+
+/* GITHUB CONFIG */
+.github-box{background:var(--navy3);border:1px solid rgba(201,168,76,.3);border-radius:12px;padding:20px;margin-bottom:4px}
+.github-box-title{font-size:13px;font-weight:700;color:var(--gold);margin-bottom:14px;display:flex;align-items:center;gap:8px}
+.github-status{display:inline-flex;align-items:center;gap:6px;font-size:12px;padding:4px 12px;border-radius:20px;font-weight:600}
+.github-status.ok{background:rgba(50,200,100,.15);color:#50c878;border:1px solid rgba(50,200,100,.3)}
+.github-status.nok{background:rgba(255,80,80,.12);color:#FF6060;border:1px solid rgba(255,80,80,.25)}
+.github-status.none{background:rgba(138,155,176,.1);color:var(--gray);border:1px solid var(--border)}
+.save-progress{display:none;align-items:center;gap:10px;font-size:13px;color:var(--gold);padding:10px 0}
+.save-progress.show{display:flex}
+@keyframes spin{to{transform:rotate(360deg)}}
+.spinner{width:16px;height:16px;border:2px solid rgba(201,168,76,.3);border-top-color:var(--gold);border-radius:50%;animation:spin .8s linear infinite;flex-shrink:0}
+
 /* TOAST */
 #toast{position:fixed;bottom:90px;right:28px;background:var(--gold);color:var(--navy);padding:12px 22px;border-radius:8px;font-size:14px;font-weight:700;transform:translateY(20px);opacity:0;transition:all .3s;pointer-events:none;z-index:9999}
 #toast.show{transform:translateY(0);opacity:1}
+#toast.err{background:#FF6060;color:white}
+
 /* ANIM */
 .fu{opacity:0;transform:translateY(24px);transition:opacity .65s ease,transform .65s ease}
 .fu.vis{opacity:1;transform:translateY(0)}
@@ -184,10 +188,9 @@ footer em{color:var(--gold);font-style:normal}
 ::-webkit-scrollbar-thumb:hover{background:var(--gold)}
 @media(max-width:900px){
   nav{padding:0 20px}
-  .nav-links a:not([onclick]){display:none}
+  .nav-links a:not([data-action]){display:none}
   #hero{grid-template-columns:1fr;padding:100px 20px 60px}
   .hero-right{grid-template-columns:1fr 1fr}
-  .stat-card:first-child{grid-column:span 2}
   section{padding:70px 20px}
   .about-layout,.parcours-layout{grid-template-columns:1fr;gap:40px}
   .f-row{grid-template-columns:1fr}
@@ -201,90 +204,233 @@ footer em{color:var(--gold);font-style:normal}
 <nav>
   <div class="nav-brand">Venance <span>Houndété</span></div>
   <div class="nav-links">
-    <a href="#about"    data-fr="À propos"    data-en="About">À propos</a>
-    <a href="#services" data-fr="Services"    data-en="Services">Services</a>
-    <a href="#projects" data-fr="Projets"     data-en="Projects">Projets</a>
-    <a href="#skills"   data-fr="Compétences" data-en="Skills">Compétences</a>
-    <a href="#parcours" data-fr="Parcours"    data-en="Background">Parcours</a>
-    <a href="#contact"  data-fr="Contact"     data-en="Contact">Contact</a>
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#projects">Projets</a>
+    <a href="#skills">Compétences</a>
+    <a href="#parcours">Parcours</a>
+    <a href="#contact">Contact</a>
     <div class="lang-toggle">
       <button class="lang-btn active" onclick="setLang('fr')">🇫🇷 FR</button>
-      <button class="lang-btn"        onclick="setLang('en')">🇬🇧 EN</button>
+      <button class="lang-btn" onclick="setLang('en')">🇬🇧 EN</button>
     </div>
   </div>
 </nav>
 
 <section id="hero">
-  <div class="fu">
-    <div class="hero-eyebrow" data-fr="Disponible pour des missions" data-en="Available for missions">Disponible pour des missions</div>
+  <div class="fu vis">
+    <div class="hero-eyebrow">Disponible pour des missions</div>
     <h1 class="hero-name">Venance<br><span class="accent">Houndété</span></h1>
-    <p class="hero-title" id="typing-el"></p>
-    <p class="hero-desc" id="hero-desc"></p>
+    <p class="hero-title" id="typing-el">Gouvernance des Systèmes d'Info</p>
+    <p class="hero-desc" id="hero-desc">J'aide les entreprises à protéger leurs systèmes informatiques, à respecter les normes de sécurité internationales et à prévenir les cyberattaques — avec des explications claires, accessibles à tous.</p>
     <div class="hero-actions">
-      <a href="#projects" class="btn btn-gold"    data-fr="Voir mon travail" data-en="See my work">Voir mon travail</a>
-      <a href="#contact"  class="btn btn-outline" data-fr="Me contacter"    data-en="Contact me">Me contacter</a>
+      <a href="#projects" class="btn btn-gold">Voir mon travail</a>
+      <a href="#contact" class="btn btn-outline">Me contacter</a>
     </div>
   </div>
-  <div class="hero-right fu">
+  <div class="hero-right fu vis">
     <div class="stat-card">
       <div>
-        <div class="stat-num" id="stat1-num"></div>
-        <div class="stat-label" id="stat1-lbl"></div>
+        <div class="stat-num" id="stat1-num">4+</div>
+        <div class="stat-label" id="stat1-lbl">Projets réalisés pour de vraies organisations</div>
       </div>
     </div>
-    <div class="stat-card"><div class="stat-icon">🔍</div><div class="stat-num">31</div><div class="stat-label" data-fr="Points de sécurité vérifiés lors d'un audit réel" data-en="Security points checked during a real audit">Points de sécurité vérifiés lors d'un audit réel</div></div>
-    <div class="stat-card"><div class="stat-icon">📋</div><div class="stat-num">50+</div><div class="stat-label" data-fr="Règles de sécurité rédigées pour une vraie institution" data-en="Security rules written for a real institution">Règles de sécurité rédigées pour une vraie institution</div></div>
-    <div class="stat-card"><div class="stat-icon">🌍</div><div class="stat-num">3</div><div class="stat-label" data-fr="Normes internationales maîtrisées" data-en="International standards mastered">Normes internationales maîtrisées</div></div>
+    <div class="stat-card"><div class="stat-icon">🔍</div><div class="stat-num">31</div><div class="stat-label">Points de sécurité vérifiés lors d'un audit réel</div></div>
+    <div class="stat-card"><div class="stat-icon">📋</div><div class="stat-num">50+</div><div class="stat-label">Règles de sécurité rédigées pour une vraie institution</div></div>
+    <div class="stat-card"><div class="stat-icon">🌍</div><div class="stat-num">3</div><div class="stat-label">Normes internationales maîtrisées</div></div>
   </div>
 </section>
 
 <section id="about">
-  <div class="s-tag" data-fr="À PROPOS" data-en="ABOUT">À PROPOS</div>
-  <h2 class="s-title" data-fr="Qui suis-je ?" data-en="Who am I?">Qui suis-je ?</h2>
+  <div class="s-tag">À PROPOS</div>
+  <h2 class="s-title">Qui suis-je ?</h2>
   <div class="about-layout">
-    <div class="about-body fu" id="about-body"></div>
-    <div class="info-list fu" id="info-list"></div>
+    <div class="about-body fu" id="about-body"><p>Je suis Venance Houndété, spécialiste en sécurité des systèmes d'information basé à Abomey-Calavi, au Bénin.</p><p>En termes simples : mon rôle est de vérifier si les ordinateurs et les données d'une organisation sont bien protégés, d'identifier les failles avant que des personnes malveillantes ne les exploitent, et de rédiger les règles de sécurité à suivre.</p><p>J'ai déjà réalisé ces missions pour l'Université d'Abomey-Calavi — j'y ai produit la toute première politique de sécurité informatique officielle de l'institution. Je suis disponible pour accompagner des entreprises, des ONG ou des administrations.</p></div>
+    <div class="info-list fu" id="info-list">
+    <div class="info-item"><div class="info-label">Localisation</div><div class="info-val">Abomey-Calavi, Bénin · Travail à distance possible</div></div>
+    <div class="info-item"><div class="info-label">Spécialité</div><div class="info-val">Cybersécurité · Gouvernance SI · Conformité ISO 27001</div></div>
+    <div class="info-item"><div class="info-label">Langues</div><div class="info-val">Français (courant) · Anglais (intermédiaire)</div></div>
+    <div class="info-item"><div class="info-label">Disponibilité</div><div class="info-val">Freelance · Missions courtes &amp; longues</div></div></div>
   </div>
 </section>
 
 <section id="services">
-  <div class="s-tag" data-fr="SERVICES" data-en="SERVICES">SERVICES</div>
-  <h2 class="s-title" data-fr="Ce que je fais concrètement" data-en="What I actually do">Ce que je fais concrètement</h2>
-  <p class="s-sub" data-fr="Des missions claires avec des résultats concrets. Voici comment j'aide les organisations à mieux se protéger." data-en="Clear missions with concrete results. Here's how I help organizations better protect themselves.">Des missions claires avec des résultats concrets. Voici comment j'aide les organisations à mieux se protéger.</p>
-  <div class="services-grid fu" id="services-grid"></div>
+  <div class="s-tag">SERVICES</div>
+  <h2 class="s-title">Ce que je fais concrètement</h2>
+  <p class="s-sub">Des missions claires avec des résultats concrets. Voici comment j'aide les organisations à mieux se protéger.</p>
+  <div class="services-grid fu" id="services-grid">
+    <div class="service-card">
+      <div class="svc-icon">🔍</div><div class="svc-line"></div>
+      <div class="svc-name">Audit de Sécurité</div>
+      <div class="svc-text">Je vérifie si votre système informatique est bien protégé : j'identifie les failles, les risques et je vous remets un rapport clair avec des recommandations concrètes à appliquer.</div>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon">📋</div><div class="svc-line"></div>
+      <div class="svc-name">Politique de Sécurité (PSSI)</div>
+      <div class="svc-text">Je rédige le document officiel qui définit les règles de sécurité informatique de votre organisation — ce que tout le monde doit respecter pour protéger vos données.</div>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon">📊</div><div class="svc-line"></div>
+      <div class="svc-name">Analyse de conformité ISO 27001</div>
+      <div class="svc-text">Je compare votre situation actuelle aux exigences de la norme internationale ISO 27001 et je vous guide pas à pas vers la certification.</div>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon">🗺️</div><div class="svc-line"></div>
+      <div class="svc-name">Cartographie des systèmes</div>
+      <div class="svc-text">Je dresse une carte complète de votre infrastructure informatique : vos actifs, vos données sensibles et vos points vulnérables, présentés de manière claire.</div>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon">⚙️</div><div class="svc-line"></div>
+      <div class="svc-name">Développement sécurisé</div>
+      <div class="svc-text">J'intègre les meilleures pratiques de sécurité dans vos applications : protection des données, sécurité des connexions, blocage des attaques courantes.</div>
+    </div>
+    <div class="service-card">
+      <div class="svc-icon">🎓</div><div class="svc-line"></div>
+      <div class="svc-name">Formation de vos équipes</div>
+      <div class="svc-text">J'anime des formations simples et pratiques pour que vos collaborateurs comprennent les risques informatiques et sachent comment réagir.</div>
+    </div></div>
 </section>
 
 <section id="projects">
-  <div class="s-tag" data-fr="PROJETS" data-en="PROJECTS">PROJETS</div>
-  <h2 class="s-title" data-fr="Ce que j'ai réalisé" data-en="What I've done">Ce que j'ai réalisé</h2>
-  <p class="s-sub" data-fr="Des projets réels, pour de vraies organisations. Pas des exercices théoriques." data-en="Real projects, for real organizations. Not theoretical exercises.">Des projets réels, pour de vraies organisations. Pas des exercices théoriques.</p>
-  <div class="projects-grid fu" id="projects-grid"></div>
+  <div class="s-tag">PROJETS</div>
+  <h2 class="s-title">Ce que j'ai réalisé</h2>
+  <p class="s-sub">Des projets réels, pour de vraies organisations. Pas des exercices théoriques.</p>
+  <div class="projects-grid fu" id="projects-grid">
+    <div class="project-card">
+      <div class="p-badge">Mission réelle</div>
+      <div class="p-date">2025 · SPTIC – Université d'Abomey-Calavi</div>
+      <div class="p-name">Analyse des failles de sécurité de l'UAC</div>
+      <div class="p-org">SPTIC – Université d'Abomey-Calavi</div>
+      <ul class="p-list"><li>Vérification de 31 points de sécurité informatique</li><li>Comparaison avec 3 normes internationales (PSSIE, ISO 27001, Code du Numérique)</li><li>27 questions posées, 7 domaines de sécurité couverts</li><li>Rapport de vulnérabilités avec recommandations priorisées</li></ul>
+      <div class="p-chips"><span class="chip">ISO 27001</span><span class="chip">PSSIE</span><span class="chip">Audit</span><span class="chip">Conformité</span></div>
+    </div>
+    <div class="project-card">
+      <div class="p-badge">Historique</div>
+      <div class="p-date">2025 · SPTIC – Université d'Abomey-Calavi</div>
+      <div class="p-name">Première Politique de Sécurité Officielle de l'UAC</div>
+      <div class="p-org">SPTIC – Université d'Abomey-Calavi</div>
+      <ul class="p-list"><li>Premier document officiel de sécurité de l'université — une première au Bénin</li><li>13 chapitres, plus de 50 règles de sécurité rédigées</li><li>Plan de mise en conformité sur 18 à 24 mois (4 étapes)</li><li>Conforme aux normes PSSIE Bénin et Code du Numérique</li></ul>
+      <div class="p-chips"><span class="chip">PSSI</span><span class="chip">Gouvernance</span><span class="chip">ISO 27001</span><span class="chip">Bénin</span></div>
+    </div>
+    <div class="project-card">
+      <div class="p-badge">Hackathon</div>
+      <div class="p-date">Fév. 2026 · Hackathon AI4BMI – IFRI/UAC</div>
+      <div class="p-name">Application IA avec Sécurité Renforcée</div>
+      <div class="p-org">Hackathon AI4BMI – IFRI/UAC</div>
+      <ul class="p-list"><li>Données chiffrées avec AES-256 (standard militaire)</li><li>Double vérification d'identité par email automatique</li><li>Protection contre les tentatives de piratage en force brute</li><li>Conforme aux recommandations NIST sur les mots de passe</li></ul>
+      <div class="p-chips"><span class="chip">Python</span><span class="chip">Flask</span><span class="chip">Chiffrement</span><span class="chip">MFA</span></div>
+    </div>
+    <div class="project-card">
+      <div class="p-badge">Hackathon</div>
+      <div class="p-date">2023–2024 · IFRI / UAC</div>
+      <div class="p-name">Hackathon NetBlue — Lutte contre la cybercriminalité</div>
+      <div class="p-org">IFRI / UAC</div>
+      <ul class="p-list"><li>Collecte de preuves numériques et analyse de sources (OSINT)</li><li>Surveillance de cyberattaques ciblant des systèmes industriels</li><li>Utilisation de plateformes professionnelles de détection (SIEM)</li></ul>
+      <div class="p-chips"><span class="chip">OSINT</span><span class="chip">SIEM</span><span class="chip">Cybercriminalité</span></div>
+    </div></div>
 </section>
 
 <section id="skills">
-  <div class="s-tag" data-fr="COMPÉTENCES" data-en="SKILLS">COMPÉTENCES</div>
-  <h2 class="s-title" data-fr="Ce que je maîtrise" data-en="What I master">Ce que je maîtrise</h2>
-  <div class="skills-layout fu" id="skills-layout"></div>
+  <div class="s-tag">COMPÉTENCES</div>
+  <h2 class="s-title">Ce que je maîtrise</h2>
+  <div class="skills-layout fu" id="skills-layout">
+    <div class="skill-group">
+      <div class="sk-group-name">Gouvernance &amp; Conformité</div>
+      
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">ISO 27001:2022</span><span class="sk-pct">85%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="85"></div></div>
+        </div>
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">PSSIE Bénin</span><span class="sk-pct">88%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="88"></div></div>
+        </div>
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">Rédaction PSSI</span><span class="sk-pct">85%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="85"></div></div>
+        </div>
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">Gap Analysis</span><span class="sk-pct">82%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="82"></div></div>
+        </div>
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">NIST / OWASP</span><span class="sk-pct">75%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="75"></div></div>
+        </div>
+    </div>
+    <div class="skill-group">
+      <div class="sk-group-name">Cybersécurité</div>
+      
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">Wireshark / Nmap</span><span class="sk-pct">80%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="80"></div></div>
+        </div>
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">Burp Suite</span><span class="sk-pct">70%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="70"></div></div>
+        </div>
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">Kali Linux</span><span class="sk-pct">78%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="78"></div></div>
+        </div>
+    </div>
+    <div class="skill-group">
+      <div class="sk-group-name">Développement</div>
+      
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">Python / Flask</span><span class="sk-pct">75%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="75"></div></div>
+        </div>
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">Chiffrement AES / JWT</span><span class="sk-pct">78%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="78"></div></div>
+        </div>
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">Git / GitHub</span><span class="sk-pct">72%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="72"></div></div>
+        </div>
+    </div>
+    <div class="skill-group">
+      <div class="sk-group-name">SIEM &amp; Analyse</div>
+      
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">ArcSight / QRadar</span><span class="sk-pct">60%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="60"></div></div>
+        </div>
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">OSINT</span><span class="sk-pct">70%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="70"></div></div>
+        </div>
+        <div class="sk-row">
+          <div class="sk-top"><span class="sk-name">Netdata</span><span class="sk-pct">65%</span></div>
+          <div class="sk-track"><div class="sk-fill" data-w="65"></div></div>
+        </div>
+    </div></div>
   <div class="tools-wrap fu">
-    <div class="tools-title" data-fr="OUTILS & LOGICIELS" data-en="TOOLS & SOFTWARE">OUTILS & LOGICIELS</div>
-    <div class="tools-chips" id="tools-chips"></div>
+    <div class="tools-title">OUTILS &amp; LOGICIELS</div>
+    <div class="tools-chips" id="tools-chips"><div class="tool">Wireshark</div><div class="tool">Nmap</div><div class="tool">Burp Suite</div><div class="tool">Kali Linux</div><div class="tool">Aircrack-ng</div><div class="tool">ArcSight</div><div class="tool">QRadar</div><div class="tool">Netdata</div><div class="tool">Python</div><div class="tool">Flask</div><div class="tool">Git</div><div class="tool">AES-256</div><div class="tool">JWT</div><div class="tool">OSINT</div></div>
   </div>
 </section>
 
 <section id="parcours">
-  <div class="s-tag" data-fr="PARCOURS" data-en="BACKGROUND">PARCOURS</div>
-  <h2 class="s-title" data-fr="Formation & Certifications" data-en="Education & Certifications">Formation & Certifications</h2>
+  <div class="s-tag">PARCOURS</div>
+  <h2 class="s-title">Formation &amp; Certifications</h2>
   <div class="parcours-layout fu">
-    <div><div class="pc-title" data-fr="FORMATION" data-en="EDUCATION">FORMATION</div><div class="timeline" id="edu-timeline"></div></div>
-    <div><div class="pc-title" data-fr="CERTIFICATIONS" data-en="CERTIFICATIONS">CERTIFICATIONS</div><div class="timeline" id="cert-timeline"></div></div>
+    <div><div class="pc-title">FORMATION</div><div class="timeline" id="edu-timeline">
+    <div class="tl-item"><div class="tl-date">2023 – présent</div><div class="tl-name">Licence – Sécurité Informatique</div><div class="tl-sub">IFRI – Université d'Abomey-Calavi, Bénin</div></div></div></div>
+    <div><div class="pc-title">CERTIFICATIONS</div><div class="timeline" id="cert-timeline">
+    <div class="tl-item"><div class="tl-date">2025</div><div class="tl-name">Introduction to Cyber Security</div><div class="tl-sub">Cisco Networking Academy</div></div></div></div>
   </div>
 </section>
 
 <section id="contact">
-  <div class="s-tag" data-fr="CONTACT" data-en="CONTACT">CONTACT</div>
-  <h2 class="s-title" data-fr="Travaillons ensemble" data-en="Let's work together">Travaillons ensemble</h2>
-  <p class="contact-desc" data-fr="Besoin d'un audit de sécurité, d'une politique de sécurité ou d'un accompagnement en conformité ? Écrivez-moi directement." data-en="Need a security audit, a security policy or compliance support? Write to me directly.">Besoin d'un audit de sécurité, d'une politique de sécurité ou d'un accompagnement en conformité ? Écrivez-moi directement.</p>
-  <div class="contact-grid fu" id="contact-grid"></div>
+  <div class="s-tag">CONTACT</div>
+  <h2 class="s-title">Travaillons ensemble</h2>
+  <p class="contact-desc">Besoin d'un audit de sécurité, d'une politique de sécurité ou d'un accompagnement en conformité ? Écrivez-moi directement.</p>
+  <div class="contact-grid fu" id="contact-grid">
+    <a href="mailto:vhoundete@gmail.com" class="contact-card" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></svg>vhoundete@gmail.com</a>
+    <a href="https://linkedin.com/in/venancehoundete" class="contact-card" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>linkedin.com/in/venancehoundete</a>
+    <a href="tel:+22901699559407" class="contact-card" target="_blank"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>+229 01 69 95 94 07</a></div>
 </section>
 
 <footer>
@@ -293,40 +439,90 @@ footer em{color:var(--gold);font-style:normal}
   <div id="footer-mail">vhoundete@gmail.com</div>
 </footer>
 
+<!-- Bouton admin -->
 <div id="admin-trigger" title="Administration du site">⚙</div>
-<div id="toast"></div>
+<div id="toast" class="">✅ Config GitHub sauvegardée !</div>
 
-<div id="admin-overlay">
+<!-- Panel admin -->
+<div id="admin-overlay" class="open">
   <div id="admin-panel">
-    <!-- LOGIN -->
-    <div id="adm-login">
-      <div class="lg-title">🔐 Administration</div>
+
+    <!-- ECRAN DE CONNEXION -->
+    <div id="adm-login" style="display: none;">
+      <div style="font-size:48px">🔐</div>
+      <div class="lg-title">Administration</div>
       <div class="lg-sub">Entrez votre mot de passe pour modifier le site</div>
       <div class="lg-form">
-        <input class="f-input" type="password" id="adm-pw" placeholder="Mot de passe…" onkeydown="if(event.key==='Enter')checkPw()">
-        <div class="lg-err" id="lg-err">Mot de passe incorrect</div>
-        <button class="ab ab-gold" onclick="checkPw()">→ Entrer</button>
-        <button class="ab ab-2nd" onclick="closeAdmin()">Annuler</button>
+        <input class="f-input" type="password" id="adm-pw" placeholder="Mot de passe…">
+        <div class="lg-err" id="lg-err" style="display: none;">❌ Mot de passe incorrect</div>
+        <button class="ab ab-gold" id="btn-login">→ Entrer</button>
+        <button class="ab ab-2nd" id="btn-cancel-login">Annuler</button>
       </div>
     </div>
-    <!-- PANEL -->
-    <div id="adm-content" style="display:none;flex-direction:column;flex:1;overflow:hidden">
+
+    <!-- CONTENU ADMIN -->
+    <div id="adm-content" style="display: flex; flex-direction: column; flex: 1 1 0%; overflow: hidden;">
       <div class="adm-hd">
         <div class="adm-title">⚙ Administration du site</div>
-        <button class="adm-close" onclick="closeAdmin()">✕</button>
+        <button class="adm-close" id="btn-close-admin">✕</button>
       </div>
       <div class="adm-tabs">
-        <button class="adm-tab active" onclick="showTab('t-infos',this)">Infos</button>
-        <button class="adm-tab" onclick="showTab('t-services',this)">Services</button>
-        <button class="adm-tab" onclick="showTab('t-projects',this)">Projets</button>
-        <button class="adm-tab" onclick="showTab('t-skills',this)">Compétences</button>
-        <button class="adm-tab" onclick="showTab('t-parcours',this)">Parcours</button>
-        <button class="adm-tab" onclick="showTab('t-contact',this)">Contact</button>
+        <button class="adm-tab" data-tab="t-github">🔗 GitHub</button>
+        <button class="adm-tab active" data-tab="t-infos">Infos</button>
+        <button class="adm-tab" data-tab="t-services">Services</button>
+        <button class="adm-tab" data-tab="t-projects">Projets</button>
+        <button class="adm-tab" data-tab="t-skills">Compétences</button>
+        <button class="adm-tab" data-tab="t-parcours">Parcours</button>
+        <button class="adm-tab" data-tab="t-contact">Contact</button>
       </div>
       <div class="adm-body">
 
+        <!-- GITHUB CONFIG -->
+        <div class="adm-sec" id="t-github">
+          <div class="github-box">
+            <div class="github-box-title">
+              🔑 Connexion à GitHub
+              <span class="github-status none" id="gh-status-badge">⚙ Configuré (non testé)</span>
+            </div>
+            <p style="font-size:13px;color:var(--gray);margin-bottom:16px;line-height:1.7">
+              Pour que vos modifications soient visibles par tout le monde, connectez votre compte GitHub.<br>
+              Les données sont sauvegardées directement dans votre fichier <strong style="color:var(--white)">index.html</strong> sur GitHub.
+            </p>
+            <div style="display:flex;flex-direction:column;gap:12px">
+              <div class="f-group">
+                <div class="f-label">Votre username GitHub</div>
+                <input class="f-input" id="gh-user" placeholder="ex: venancedev">
+              </div>
+              <div class="f-group">
+                <div class="f-label">Nom du repo</div>
+                <input class="f-input" id="gh-repo" placeholder="ex: venancedev.github.io">
+              </div>
+              <div class="f-group">
+                <div class="f-label">Personal Access Token (ghp_...)</div>
+                <input class="f-input" id="gh-token" type="password" placeholder="ghp_xxxxxxxxxxxxxxxxxxxxxx">
+                <div class="f-hint">⚠ Ce token est stocké uniquement dans votre navigateur. Ne le partagez jamais.</div>
+              </div>
+              <div style="display:flex;gap:10px;flex-wrap:wrap">
+                <button class="ab ab-gold" id="btn-gh-save">💾 Sauvegarder la config</button>
+                <button class="ab ab-2nd" id="btn-gh-test">🔍 Tester la connexion</button>
+              </div>
+            </div>
+          </div>
+          <div style="background:var(--navy3);border:1px solid var(--border);border-radius:12px;padding:20px">
+            <div style="font-size:13px;font-weight:700;color:var(--white);margin-bottom:12px">📋 Comment créer votre token GitHub ?</div>
+            <ol style="font-size:13px;color:var(--gray);line-height:2;padding-left:20px">
+              <li>Allez sur <strong style="color:var(--gold)">github.com/settings/tokens</strong></li>
+              <li>Cliquez <strong style="color:var(--white)">"Generate new token (classic)"</strong></li>
+              <li>Donnez-lui un nom : <em style="color:var(--white)">portfolio-admin</em></li>
+              <li>Cochez uniquement ✅ <strong style="color:var(--white)">repo</strong></li>
+              <li>Cliquez <strong style="color:var(--white)">"Generate token"</strong> et copiez le token</li>
+            </ol>
+          </div>
+        </div>
+
         <!-- INFOS -->
         <div class="adm-sec active" id="t-infos">
+          <div class="save-progress show" id="prog-infos"><div class="spinner"></div><span id="prog-infos-txt">Sauvegarde sur GitHub…</span></div>
           <div class="f-row">
             <div class="f-group"><div class="f-label">Localisation</div><input class="f-input" id="f-loc"></div>
             <div class="f-group"><div class="f-label">Disponibilité</div><input class="f-input" id="f-avail"></div>
@@ -335,37 +531,79 @@ footer em{color:var(--gold);font-style:normal}
             <div class="f-group"><div class="f-label">Spécialité</div><input class="f-input" id="f-spec"></div>
             <div class="f-group"><div class="f-label">Langues</div><input class="f-input" id="f-langs"></div>
           </div>
-          <div class="f-group full"><div class="f-label">Description principale (page d'accueil)</div><textarea class="f-ta" id="f-hero"></textarea></div>
-          <div class="f-group full"><div class="f-label">Texte "À propos" (séparer les paragraphes par une ligne vide)</div><textarea class="f-ta" id="f-about" style="min-height:120px"></textarea></div>
+          <div class="f-group"><div class="f-label">Description principale (page d'accueil)</div><textarea class="f-ta" id="f-hero"></textarea></div>
+          <div class="f-group"><div class="f-label">Texte "À propos" (séparer les paragraphes par une ligne vide)</div><textarea class="f-ta" id="f-about" style="min-height:120px"></textarea></div>
           <div class="f-row">
             <div class="f-group"><div class="f-label">Grande stat — Chiffre</div><input class="f-input" id="f-s1n"></div>
             <div class="f-group"><div class="f-label">Grande stat — Description</div><input class="f-input" id="f-s1l"></div>
           </div>
-          <button class="ab ab-gold" onclick="saveInfos()">💾 Enregistrer les infos</button>
+          <button class="ab ab-gold" id="btn-save-infos">💾 Enregistrer &amp; publier</button>
         </div>
 
         <!-- SERVICES -->
         <div class="adm-sec" id="t-services">
-          <div class="item-list" id="svc-list-adm"></div>
+          <div class="save-progress" id="prog-services"><div class="spinner"></div><span>Sauvegarde en cours…</span></div>
+          <div class="item-list" id="svc-list-adm">
+        <div class="item-e">
+          <div><div class="item-e-name">🔍 Audit de Sécurité</div><div class="item-e-sub"></div></div>
+          <div><button class="ib del" onclick="delItem('services',0)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">📋 Politique de Sécurité (PSSI)</div><div class="item-e-sub"></div></div>
+          <div><button class="ib del" onclick="delItem('services',1)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">📊 Analyse de conformité ISO 27001</div><div class="item-e-sub"></div></div>
+          <div><button class="ib del" onclick="delItem('services',2)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">🗺️ Cartographie des systèmes</div><div class="item-e-sub"></div></div>
+          <div><button class="ib del" onclick="delItem('services',3)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">⚙️ Développement sécurisé</div><div class="item-e-sub"></div></div>
+          <div><button class="ib del" onclick="delItem('services',4)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">🎓 Formation de vos équipes</div><div class="item-e-sub"></div></div>
+          <div><button class="ib del" onclick="delItem('services',5)">✕ Supprimer</button></div>
+        </div></div>
           <div class="adm-div"></div>
-          <b style="color:var(--white)">➕ Nouveau service</b>
+          <div style="font-size:14px;font-weight:700;color:var(--white)">➕ Nouveau service</div>
           <div class="f-row">
             <div class="f-group"><div class="f-label">Icône (emoji)</div><input class="f-input" id="s-ico" placeholder="🔍" maxlength="4"></div>
             <div class="f-group"><div class="f-label">Nom (FR)</div><input class="f-input" id="s-nom" placeholder="Audit de Sécurité"></div>
           </div>
-          <div class="f-group full"><div class="f-label">Description simple (FR) — pour non-experts</div><textarea class="f-ta" id="s-desc" placeholder="En quoi consiste ce service…"></textarea></div>
+          <div class="f-group"><div class="f-label">Description (FR)</div><textarea class="f-ta" id="s-desc" placeholder="En quoi consiste ce service…"></textarea></div>
           <div class="f-row">
             <div class="f-group"><div class="f-label">Name (EN)</div><input class="f-input" id="s-nome" placeholder="Security Audit"></div>
-            <div class="f-group full"><div class="f-label">Description (EN)</div><input class="f-input" id="s-desce" placeholder="English description…"></div>
+            <div class="f-group"><div class="f-label">Description (EN)</div><input class="f-input" id="s-desce" placeholder="English description…"></div>
           </div>
-          <button class="ab ab-gold" onclick="addService()">➕ Ajouter ce service</button>
+          <button class="ab ab-gold" id="btn-add-svc">➕ Ajouter &amp; publier</button>
         </div>
 
         <!-- PROJETS -->
         <div class="adm-sec" id="t-projects">
-          <div class="item-list" id="prj-list-adm"></div>
+          <div class="save-progress" id="prog-projects"><div class="spinner"></div><span>Sauvegarde en cours…</span></div>
+          <div class="item-list" id="prj-list-adm">
+        <div class="item-e">
+          <div><div class="item-e-name">Analyse des failles de sécurité de l'UAC</div><div class="item-e-sub">SPTIC – Université d'Abomey-Calavi · 2025</div></div>
+          <div><button class="ib del" onclick="delItem('projects',0)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">Première Politique de Sécurité Officielle de l'UAC</div><div class="item-e-sub">SPTIC – Université d'Abomey-Calavi · 2025</div></div>
+          <div><button class="ib del" onclick="delItem('projects',1)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">Application IA avec Sécurité Renforcée</div><div class="item-e-sub">Hackathon AI4BMI – IFRI/UAC · Fév. 2026</div></div>
+          <div><button class="ib del" onclick="delItem('projects',2)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">Hackathon NetBlue — Lutte contre la cybercriminalité</div><div class="item-e-sub">IFRI / UAC · 2023–2024</div></div>
+          <div><button class="ib del" onclick="delItem('projects',3)">✕ Supprimer</button></div>
+        </div></div>
           <div class="adm-div"></div>
-          <b style="color:var(--white)">➕ Nouveau projet</b>
+          <div style="font-size:14px;font-weight:700;color:var(--white)">➕ Nouveau projet</div>
           <div class="f-row">
             <div class="f-group"><div class="f-label">Titre (FR)</div><input class="f-input" id="p-tit"></div>
             <div class="f-group"><div class="f-label">Title (EN)</div><input class="f-input" id="p-tite"></div>
@@ -374,56 +612,136 @@ footer em{color:var(--gold);font-style:normal}
             <div class="f-group"><div class="f-label">Organisation</div><input class="f-input" id="p-org"></div>
             <div class="f-group"><div class="f-label">Date</div><input class="f-input" id="p-date" placeholder="2025"></div>
           </div>
-          <div class="f-group full"><div class="f-label">Badge affiché</div><input class="f-input" id="p-badge" placeholder="ex: Institutionnel, Hackathon…"></div>
-          <div class="f-group full"><div class="f-label">Ce que j'ai fait — une ligne = un point (FR)</div><textarea class="f-ta" id="p-bul" placeholder="Analyse sur 31 points&#10;Rédaction de la PSSI…"></textarea></div>
-          <div class="f-group full"><div class="f-label">What I did — one line per point (EN)</div><textarea class="f-ta" id="p-bule" placeholder="Analysis on 31 points&#10;ISSP writing…"></textarea></div>
-          <div class="f-group full"><div class="f-label">Tags (séparés par des virgules)</div><input class="f-input" id="p-tags" placeholder="ISO 27001, Audit, PSSI"></div>
-          <button class="ab ab-gold" onclick="addProject()">➕ Ajouter ce projet</button>
+          <div class="f-group"><div class="f-label">Badge affiché</div><input class="f-input" id="p-badge" placeholder="Institutionnel, Hackathon…"></div>
+          <div class="f-group"><div class="f-label">Ce que j'ai fait — une ligne = un point (FR)</div><textarea class="f-ta" id="p-bul" placeholder="Analyse sur 31 points
+Rédaction de la PSSI…"></textarea></div>
+          <div class="f-group"><div class="f-label">What I did — one line per point (EN)</div><textarea class="f-ta" id="p-bule" placeholder="Analysis on 31 points…"></textarea></div>
+          <div class="f-group"><div class="f-label">Tags (séparés par des virgules)</div><input class="f-input" id="p-tags" placeholder="ISO 27001, Audit, PSSI"></div>
+          <button class="ab ab-gold" id="btn-add-prj">➕ Ajouter &amp; publier</button>
         </div>
 
-        <!-- COMPETENCES -->
+        <!-- COMPÉTENCES -->
         <div class="adm-sec" id="t-skills">
-          <div class="item-list" id="sk-list-adm"></div>
+          <div class="save-progress" id="prog-skills"><div class="spinner"></div><span>Sauvegarde en cours…</span></div>
+          <div class="item-list" id="sk-list-adm">
+        <div class="item-e">
+          <div><div class="item-e-name">ISO 27001:2022</div><div class="item-e-sub">Gouvernance &amp; Conformité · 85%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',0)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">PSSIE Bénin</div><div class="item-e-sub">Gouvernance &amp; Conformité · 88%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',1)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">Rédaction PSSI</div><div class="item-e-sub">Gouvernance &amp; Conformité · 85%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',2)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">Gap Analysis</div><div class="item-e-sub">Gouvernance &amp; Conformité · 82%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',3)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">NIST / OWASP</div><div class="item-e-sub">Gouvernance &amp; Conformité · 75%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',4)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">Wireshark / Nmap</div><div class="item-e-sub">Cybersécurité · 80%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',5)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">Burp Suite</div><div class="item-e-sub">Cybersécurité · 70%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',6)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">Kali Linux</div><div class="item-e-sub">Cybersécurité · 78%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',7)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">Python / Flask</div><div class="item-e-sub">Développement · 75%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',8)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">Chiffrement AES / JWT</div><div class="item-e-sub">Développement · 78%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',9)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">Git / GitHub</div><div class="item-e-sub">Développement · 72%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',10)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">ArcSight / QRadar</div><div class="item-e-sub">SIEM &amp; Analyse · 60%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',11)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">OSINT</div><div class="item-e-sub">SIEM &amp; Analyse · 70%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',12)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">Netdata</div><div class="item-e-sub">SIEM &amp; Analyse · 65%</div></div>
+          <div><button class="ib del" onclick="delItem('skills',13)">✕ Supprimer</button></div>
+        </div></div>
           <div class="adm-div"></div>
-          <b style="color:var(--white)">➕ Nouvelle compétence</b>
+          <div style="font-size:14px;font-weight:700;color:var(--white)">➕ Nouvelle compétence</div>
           <div class="f-row">
             <div class="f-group"><div class="f-label">Nom</div><input class="f-input" id="sk-n" placeholder="ISO 27001:2022"></div>
-            <div class="f-group"><div class="f-label">Catégorie</div><input class="f-input" id="sk-c" placeholder="Gouvernance & Conformité"></div>
+            <div class="f-group"><div class="f-label">Catégorie</div><input class="f-input" id="sk-c" placeholder="Gouvernance &amp; Conformité"></div>
           </div>
-          <div class="f-group full"><div class="f-label">Niveau (0–100)</div><input class="f-input" id="sk-l" type="number" min="0" max="100" placeholder="85"></div>
-          <button class="ab ab-gold" onclick="addSkill()">➕ Ajouter</button>
+          <div class="f-group"><div class="f-label">Niveau (0–100)</div><input class="f-input" id="sk-l" type="number" min="0" max="100" placeholder="85"></div>
+          <button class="ab ab-gold" id="btn-add-sk">➕ Ajouter compétence</button>
           <div class="adm-div"></div>
-          <b style="color:var(--white)">➕ Nouvel outil / logiciel</b>
-          <div class="f-group full"><input class="f-input" id="tk-n" placeholder="Wireshark, Nmap…"><div class="f-hint">Un outil à la fois</div></div>
-          <button class="ab ab-gold" onclick="addTool()">➕ Ajouter</button>
+          <div style="font-size:14px;font-weight:700;color:var(--white)">➕ Nouvel outil</div>
+          <div class="f-group"><input class="f-input" id="tk-n" placeholder="Wireshark, Nmap…"><div class="f-hint">Un outil à la fois</div></div>
+          <button class="ab ab-gold" id="btn-add-tool">➕ Ajouter outil &amp; publier</button>
         </div>
 
         <!-- PARCOURS -->
         <div class="adm-sec" id="t-parcours">
-          <b style="color:var(--white)">📚 Formations</b>
-          <div class="item-list" id="edu-list-adm"></div>
+          <div class="save-progress" id="prog-parcours"><div class="spinner"></div><span>Sauvegarde en cours…</span></div>
+          <div style="font-size:14px;font-weight:700;color:var(--white)">📚 Formations</div>
+          <div class="item-list" id="edu-list-adm">
+        <div class="item-e">
+          <div><div class="item-e-name">Licence – Sécurité Informatique</div><div class="item-e-sub">IFRI – Université d'Abomey-Calavi, Bénin · 2023 – présent</div></div>
+          <div><button class="ib del" onclick="delItem('edu',0)">✕ Supprimer</button></div>
+        </div></div>
           <div class="f-row">
             <div class="f-group"><div class="f-label">Intitulé</div><input class="f-input" id="e-n" placeholder="Licence – Sécurité Informatique"></div>
             <div class="f-group"><div class="f-label">Date</div><input class="f-input" id="e-d" placeholder="2023 – présent"></div>
           </div>
-          <div class="f-group full"><div class="f-label">Établissement</div><input class="f-input" id="e-o" placeholder="IFRI – UAC"></div>
-          <button class="ab ab-gold" onclick="addEdu()">➕ Ajouter</button>
+          <div class="f-group"><div class="f-label">Établissement</div><input class="f-input" id="e-o" placeholder="IFRI – UAC"></div>
+          <button class="ab ab-gold" id="btn-add-edu">➕ Ajouter formation</button>
           <div class="adm-div"></div>
-          <b style="color:var(--white)">🏅 Certifications</b>
-          <div class="item-list" id="cert-list-adm"></div>
+          <div style="font-size:14px;font-weight:700;color:var(--white)">🏅 Certifications</div>
+          <div class="item-list" id="cert-list-adm">
+        <div class="item-e">
+          <div><div class="item-e-name">Introduction to Cyber Security</div><div class="item-e-sub">Cisco Networking Academy · 2025</div></div>
+          <div><button class="ib del" onclick="delItem('certs',0)">✕ Supprimer</button></div>
+        </div></div>
           <div class="f-row">
             <div class="f-group"><div class="f-label">Nom</div><input class="f-input" id="c-n" placeholder="Introduction to Cyber Security"></div>
             <div class="f-group"><div class="f-label">Date</div><input class="f-input" id="c-d" placeholder="2025"></div>
           </div>
-          <div class="f-group full"><div class="f-label">Organisme</div><input class="f-input" id="c-o" placeholder="Cisco Networking Academy"></div>
-          <button class="ab ab-gold" onclick="addCert()">➕ Ajouter</button>
+          <div class="f-group"><div class="f-label">Organisme</div><input class="f-input" id="c-o" placeholder="Cisco Networking Academy"></div>
+          <button class="ab ab-gold" id="btn-add-cert">➕ Ajouter cert. &amp; publier</button>
         </div>
 
         <!-- CONTACT -->
         <div class="adm-sec" id="t-contact">
-          <div class="item-list" id="ct-list-adm"></div>
+          <div class="save-progress" id="prog-contact"><div class="spinner"></div><span>Sauvegarde en cours…</span></div>
+          <div class="item-list" id="ct-list-adm">
+        <div class="item-e">
+          <div><div class="item-e-name">vhoundete@gmail.com</div><div class="item-e-sub">email</div></div>
+          <div><button class="ib del" onclick="delItem('contacts',0)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">linkedin.com/in/venancehoundete</div><div class="item-e-sub">linkedin</div></div>
+          <div><button class="ib del" onclick="delItem('contacts',1)">✕ Supprimer</button></div>
+        </div>
+        <div class="item-e">
+          <div><div class="item-e-name">+229 01 69 95 94 07</div><div class="item-e-sub">phone</div></div>
+          <div><button class="ib del" onclick="delItem('contacts',2)">✕ Supprimer</button></div>
+        </div></div>
           <div class="adm-div"></div>
-          <b style="color:var(--white)">➕ Nouveau moyen de contact</b>
+          <div style="font-size:14px;font-weight:700;color:var(--white)">➕ Nouveau moyen de contact</div>
           <div class="f-row">
             <div class="f-group">
               <div class="f-label">Type</div>
@@ -438,8 +756,8 @@ footer em{color:var(--gold);font-style:normal}
             </div>
             <div class="f-group"><div class="f-label">Libellé affiché</div><input class="f-input" id="ct-lbl" placeholder="vhoundete@gmail.com"></div>
           </div>
-          <div class="f-group full"><div class="f-label">Lien cliquable</div><input class="f-input" id="ct-lnk" placeholder="mailto:… ou https://…"></div>
-          <button class="ab ab-gold" onclick="addContact()">➕ Ajouter</button>
+          <div class="f-group"><div class="f-label">Lien cliquable</div><input class="f-input" id="ct-lnk" placeholder="mailto:… ou https://…"></div>
+          <button class="ab ab-gold" id="btn-add-ct">➕ Ajouter &amp; publier</button>
         </div>
 
       </div>
@@ -448,57 +766,315 @@ footer em{color:var(--gold);font-style:normal}
 </div>
 
 <script>
-// ══════ DONNÉES PAR DÉFAUT
+// ══════ MOT DE PASSE ADMIN
 const PASS = 'venance2026';
+
+// ══════ DONNÉES PAR DÉFAUT
 const DEF = {
-  infos:{
-    loc:"Abomey-Calavi, Bénin · Travail à distance possible",
-    avail:"Freelance · Missions courtes & longues",
-    spec:"Cybersécurité · Gouvernance SI · Conformité ISO 27001",
-    langs:"Français (courant) · Anglais (intermédiaire)",
-    hero:"J'aide les entreprises à protéger leurs systèmes informatiques, à respecter les normes de sécurité internationales et à prévenir les cyberattaques — avec des explications claires, accessibles à tous.",
-    about:"Je suis Venance Houndété, spécialiste en sécurité des systèmes d'information basé à Abomey-Calavi, au Bénin.\n\nEn termes simples : mon rôle est de vérifier si les ordinateurs et les données d'une organisation sont bien protégés, d'identifier les failles avant que des personnes malveillantes ne les exploitent, et de rédiger les règles de sécurité à suivre.\n\nJ'ai déjà réalisé ces missions pour l'Université d'Abomey-Calavi — j'y ai produit la toute première politique de sécurité informatique officielle de l'institution. Je suis disponible pour accompagner des entreprises, des ONG ou des administrations.",
-    s1n:"4+", s1l:"Projets réalisés pour de vraies organisations"
+  "infos": {
+    "loc": "Abomey-Calavi, Bénin · Travail à distance possible",
+    "avail": "Freelance · Missions courtes & longues",
+    "spec": "Cybersécurité · Gouvernance SI · Conformité ISO 27001",
+    "langs": "Français (courant) · Anglais (intermédiaire)",
+    "hero": "J'aide les entreprises à protéger leurs systèmes informatiques, à respecter les normes de sécurité internationales et à prévenir les cyberattaques — avec des explications claires, accessibles à tous.",
+    "about": "Je suis Venance Houndété, spécialiste en sécurité des systèmes d'information basé à Abomey-Calavi, au Bénin.\n\nEn termes simples : mon rôle est de vérifier si les ordinateurs et les données d'une organisation sont bien protégés, d'identifier les failles avant que des personnes malveillantes ne les exploitent, et de rédiger les règles de sécurité à suivre.\n\nJ'ai déjà réalisé ces missions pour l'Université d'Abomey-Calavi — j'y ai produit la toute première politique de sécurité informatique officielle de l'institution. Je suis disponible pour accompagner des entreprises, des ONG ou des administrations.",
+    "s1n": "4+",
+    "s1l": "Projets réalisés pour de vraies organisations"
   },
-  services:[
-    {ico:"🔍",nom:"Audit de Sécurité",desc:"Je vérifie si votre système informatique est bien protégé : j'identifie les failles, les risques et je vous remets un rapport clair avec des recommandations concrètes à appliquer.",nome:"Security Audit",desce:"I check whether your IT system is well protected: I identify vulnerabilities, risks and deliver a clear report with concrete recommendations."},
-    {ico:"📋",nom:"Politique de Sécurité (PSSI)",desc:"Je rédige le document officiel qui définit les règles de sécurité informatique de votre organisation — ce que tout le monde doit respecter pour protéger vos données.",nome:"Security Policy (ISSP)",desce:"I write the official document defining your organization's IT security rules — what everyone must follow to protect your data."},
-    {ico:"📊",nom:"Analyse de conformité ISO 27001",desc:"Je compare votre situation actuelle aux exigences de la norme internationale ISO 27001 et je vous guide pas à pas vers la certification.",nome:"ISO 27001 Compliance",desce:"I compare your current situation to ISO 27001 requirements and guide you step by step toward certification."},
-    {ico:"🗺️",nom:"Cartographie des systèmes",desc:"Je dresse une carte complète de votre infrastructure informatique : vos actifs, vos données sensibles et vos points vulnérables, présentés de manière claire.",nome:"Systems Mapping",desce:"I map your complete IT infrastructure: assets, sensitive data and vulnerable points, presented clearly."},
-    {ico:"⚙️",nom:"Développement sécurisé",desc:"J'intègre les meilleures pratiques de sécurité dans vos applications : protection des données, sécurité des connexions, blocage des attaques courantes.",nome:"Secure Development",desce:"I integrate security best practices into your applications: data protection, connection security, blocking common attacks."},
-    {ico:"🎓",nom:"Formation de vos équipes",desc:"J'anime des formations simples et pratiques pour que vos collaborateurs comprennent les risques informatiques et sachent comment réagir.",nome:"Team Training",desce:"I run practical training sessions so your staff understand IT risks and know how to respond."}
+  "services": [
+    {
+      "ico": "🔍",
+      "nom": "Audit de Sécurité",
+      "desc": "Je vérifie si votre système informatique est bien protégé : j'identifie les failles, les risques et je vous remets un rapport clair avec des recommandations concrètes à appliquer.",
+      "nome": "Security Audit",
+      "desce": "I check whether your IT system is well protected: I identify vulnerabilities, risks and deliver a clear report with concrete recommendations."
+    },
+    {
+      "ico": "📋",
+      "nom": "Politique de Sécurité (PSSI)",
+      "desc": "Je rédige le document officiel qui définit les règles de sécurité informatique de votre organisation — ce que tout le monde doit respecter pour protéger vos données.",
+      "nome": "Security Policy (ISSP)",
+      "desce": "I write the official document defining your organization's IT security rules — what everyone must follow to protect your data."
+    },
+    {
+      "ico": "📊",
+      "nom": "Analyse de conformité ISO 27001",
+      "desc": "Je compare votre situation actuelle aux exigences de la norme internationale ISO 27001 et je vous guide pas à pas vers la certification.",
+      "nome": "ISO 27001 Compliance",
+      "desce": "I compare your current situation to ISO 27001 requirements and guide you step by step toward certification."
+    },
+    {
+      "ico": "🗺️",
+      "nom": "Cartographie des systèmes",
+      "desc": "Je dresse une carte complète de votre infrastructure informatique : vos actifs, vos données sensibles et vos points vulnérables, présentés de manière claire.",
+      "nome": "Systems Mapping",
+      "desce": "I map your complete IT infrastructure: assets, sensitive data and vulnerable points, presented clearly."
+    },
+    {
+      "ico": "⚙️",
+      "nom": "Développement sécurisé",
+      "desc": "J'intègre les meilleures pratiques de sécurité dans vos applications : protection des données, sécurité des connexions, blocage des attaques courantes.",
+      "nome": "Secure Development",
+      "desce": "I integrate security best practices into your applications: data protection, connection security, blocking common attacks."
+    },
+    {
+      "ico": "🎓",
+      "nom": "Formation de vos équipes",
+      "desc": "J'anime des formations simples et pratiques pour que vos collaborateurs comprennent les risques informatiques et sachent comment réagir.",
+      "nome": "Team Training",
+      "desce": "I run practical training sessions so your staff understand IT risks and know how to respond."
+    }
   ],
-  projects:[
-    {tit:"Analyse des failles de sécurité de l'UAC",tite:"UAC Security Gap Analysis",org:"SPTIC – Université d'Abomey-Calavi",date:"2025",badge:"Mission réelle",bul:["Vérification de 31 points de sécurité informatique","Comparaison avec 3 normes internationales (PSSIE, ISO 27001, Code du Numérique)","27 questions posées, 7 domaines de sécurité couverts","Rapport de vulnérabilités avec recommandations priorisées"],bule:["Verification of 31 IT security control points","Comparison with 3 international standards","27 structured questions, 7 security domains covered","Vulnerability report with prioritized recommendations"],tags:["ISO 27001","PSSIE","Audit","Conformité"]},
-    {tit:"Première Politique de Sécurité Officielle de l'UAC",tite:"UAC First Official Security Policy",org:"SPTIC – Université d'Abomey-Calavi",date:"2025",badge:"Historique",bul:["Premier document officiel de sécurité de l'université — une première au Bénin","13 chapitres, plus de 50 règles de sécurité rédigées","Plan de mise en conformité sur 18 à 24 mois (4 étapes)","Conforme aux normes PSSIE Bénin et Code du Numérique"],bule:["First official security document of the university — a first in Benin","13 chapters, over 50 security rules","18 to 24 month compliance plan (4 phases)","Compliant with PSSIE Benin and Digital Code"],tags:["PSSI","Gouvernance","ISO 27001","Bénin"]},
-    {tit:"Application IA avec Sécurité Renforcée",tite:"Secure AI Application",org:"Hackathon AI4BMI – IFRI/UAC",date:"Fév. 2026",badge:"Hackathon",bul:["Données chiffrées avec AES-256 (standard militaire)","Double vérification d'identité par email automatique","Protection contre les tentatives de piratage en force brute","Conforme aux recommandations NIST sur les mots de passe"],bule:["Data encrypted with AES-256 (military standard)","Automatic email-based two-factor verification","Protection against brute force hacking attempts","NIST password compliance"],tags:["Python","Flask","Chiffrement","MFA"]},
-    {tit:"Hackathon NetBlue — Lutte contre la cybercriminalité",tite:"NetBlue Hackathon — Fighting Cybercrime",org:"IFRI / UAC",date:"2023–2024",badge:"Hackathon",bul:["Collecte de preuves numériques et analyse de sources (OSINT)","Surveillance de cyberattaques ciblant des systèmes industriels","Utilisation de plateformes professionnelles de détection (SIEM)"],bule:["Digital evidence collection and source analysis (OSINT)","Monitoring cyberattacks targeting industrial systems","Use of professional detection platforms (SIEM)"],tags:["OSINT","SIEM","Cybercriminalité"]}
+  "projects": [
+    {
+      "tit": "Analyse des failles de sécurité de l'UAC",
+      "tite": "UAC Security Gap Analysis",
+      "org": "SPTIC – Université d'Abomey-Calavi",
+      "date": "2025",
+      "badge": "Mission réelle",
+      "bul": [
+        "Vérification de 31 points de sécurité informatique",
+        "Comparaison avec 3 normes internationales (PSSIE, ISO 27001, Code du Numérique)",
+        "27 questions posées, 7 domaines de sécurité couverts",
+        "Rapport de vulnérabilités avec recommandations priorisées"
+      ],
+      "bule": [
+        "Verification of 31 IT security control points",
+        "Comparison with 3 international standards",
+        "27 structured questions, 7 security domains covered",
+        "Vulnerability report with prioritized recommendations"
+      ],
+      "tags": [
+        "ISO 27001",
+        "PSSIE",
+        "Audit",
+        "Conformité"
+      ]
+    },
+    {
+      "tit": "Première Politique de Sécurité Officielle de l'UAC",
+      "tite": "UAC First Official Security Policy",
+      "org": "SPTIC – Université d'Abomey-Calavi",
+      "date": "2025",
+      "badge": "Historique",
+      "bul": [
+        "Premier document officiel de sécurité de l'université — une première au Bénin",
+        "13 chapitres, plus de 50 règles de sécurité rédigées",
+        "Plan de mise en conformité sur 18 à 24 mois (4 étapes)",
+        "Conforme aux normes PSSIE Bénin et Code du Numérique"
+      ],
+      "bule": [
+        "First official security document of the university — a first in Benin",
+        "13 chapters, over 50 security rules",
+        "18 to 24 month compliance plan (4 phases)",
+        "Compliant with PSSIE Benin and Digital Code"
+      ],
+      "tags": [
+        "PSSI",
+        "Gouvernance",
+        "ISO 27001",
+        "Bénin"
+      ]
+    },
+    {
+      "tit": "Application IA avec Sécurité Renforcée",
+      "tite": "Secure AI Application",
+      "org": "Hackathon AI4BMI – IFRI/UAC",
+      "date": "Fév. 2026",
+      "badge": "Hackathon",
+      "bul": [
+        "Données chiffrées avec AES-256 (standard militaire)",
+        "Double vérification d'identité par email automatique",
+        "Protection contre les tentatives de piratage en force brute",
+        "Conforme aux recommandations NIST sur les mots de passe"
+      ],
+      "bule": [
+        "Data encrypted with AES-256 (military standard)",
+        "Automatic email-based two-factor verification",
+        "Protection against brute force hacking attempts",
+        "NIST password compliance"
+      ],
+      "tags": [
+        "Python",
+        "Flask",
+        "Chiffrement",
+        "MFA"
+      ]
+    },
+    {
+      "tit": "Hackathon NetBlue — Lutte contre la cybercriminalité",
+      "tite": "NetBlue Hackathon — Fighting Cybercrime",
+      "org": "IFRI / UAC",
+      "date": "2023–2024",
+      "badge": "Hackathon",
+      "bul": [
+        "Collecte de preuves numériques et analyse de sources (OSINT)",
+        "Surveillance de cyberattaques ciblant des systèmes industriels",
+        "Utilisation de plateformes professionnelles de détection (SIEM)"
+      ],
+      "bule": [
+        "Digital evidence collection and source analysis (OSINT)",
+        "Monitoring cyberattacks targeting industrial systems",
+        "Use of professional detection platforms (SIEM)"
+      ],
+      "tags": [
+        "OSINT",
+        "SIEM",
+        "Cybercriminalité"
+      ]
+    }
   ],
-  skills:[
-    {n:"ISO 27001:2022",c:"Gouvernance & Conformité",l:85},{n:"PSSIE Bénin",c:"Gouvernance & Conformité",l:88},
-    {n:"Rédaction PSSI",c:"Gouvernance & Conformité",l:85},{n:"Gap Analysis",c:"Gouvernance & Conformité",l:82},
-    {n:"NIST / OWASP",c:"Gouvernance & Conformité",l:75},{n:"Wireshark / Nmap",c:"Cybersécurité",l:80},
-    {n:"Burp Suite",c:"Cybersécurité",l:70},{n:"Kali Linux",c:"Cybersécurité",l:78},
-    {n:"Python / Flask",c:"Développement",l:75},{n:"Chiffrement AES / JWT",c:"Développement",l:78},
-    {n:"Git / GitHub",c:"Développement",l:72},{n:"ArcSight / QRadar",c:"SIEM & Analyse",l:60},
-    {n:"OSINT",c:"SIEM & Analyse",l:70},{n:"Netdata",c:"SIEM & Analyse",l:65}
+  "skills": [
+    {
+      "n": "ISO 27001:2022",
+      "c": "Gouvernance & Conformité",
+      "l": 85
+    },
+    {
+      "n": "PSSIE Bénin",
+      "c": "Gouvernance & Conformité",
+      "l": 88
+    },
+    {
+      "n": "Rédaction PSSI",
+      "c": "Gouvernance & Conformité",
+      "l": 85
+    },
+    {
+      "n": "Gap Analysis",
+      "c": "Gouvernance & Conformité",
+      "l": 82
+    },
+    {
+      "n": "NIST / OWASP",
+      "c": "Gouvernance & Conformité",
+      "l": 75
+    },
+    {
+      "n": "Wireshark / Nmap",
+      "c": "Cybersécurité",
+      "l": 80
+    },
+    {
+      "n": "Burp Suite",
+      "c": "Cybersécurité",
+      "l": 70
+    },
+    {
+      "n": "Kali Linux",
+      "c": "Cybersécurité",
+      "l": 78
+    },
+    {
+      "n": "Python / Flask",
+      "c": "Développement",
+      "l": 75
+    },
+    {
+      "n": "Chiffrement AES / JWT",
+      "c": "Développement",
+      "l": 78
+    },
+    {
+      "n": "Git / GitHub",
+      "c": "Développement",
+      "l": 72
+    },
+    {
+      "n": "ArcSight / QRadar",
+      "c": "SIEM & Analyse",
+      "l": 60
+    },
+    {
+      "n": "OSINT",
+      "c": "SIEM & Analyse",
+      "l": 70
+    },
+    {
+      "n": "Netdata",
+      "c": "SIEM & Analyse",
+      "l": 65
+    }
   ],
-  tools:["Wireshark","Nmap","Burp Suite","Kali Linux","Aircrack-ng","ArcSight","QRadar","Netdata","Python","Flask","Git","AES-256","JWT","OSINT"],
-  edu:[{n:"Licence – Sécurité Informatique",o:"IFRI – Université d'Abomey-Calavi, Bénin",d:"2023 – présent"}],
-  certs:[{n:"Introduction to Cyber Security",o:"Cisco Networking Academy",d:"2025"}],
-  contacts:[
-    {type:"email",lbl:"vhoundete@gmail.com",lnk:"mailto:vhoundete@gmail.com"},
-    {type:"linkedin",lbl:"linkedin.com/in/venancehoundete",lnk:"https://linkedin.com/in/venancehoundete"},
-    {type:"phone",lbl:"+229 01 69 95 94 07",lnk:"tel:+22901699559407"}
+  "tools": [
+    "Wireshark",
+    "Nmap",
+    "Burp Suite",
+    "Kali Linux",
+    "Aircrack-ng",
+    "ArcSight",
+    "QRadar",
+    "Netdata",
+    "Python",
+    "Flask",
+    "Git",
+    "AES-256",
+    "JWT",
+    "OSINT"
+  ],
+  "edu": [
+    {
+      "n": "Licence – Sécurité Informatique",
+      "o": "IFRI – Université d'Abomey-Calavi, Bénin",
+      "d": "2023 – présent"
+    }
+  ],
+  "certs": [
+    {
+      "n": "Introduction to Cyber Security",
+      "o": "Cisco Networking Academy",
+      "d": "2025"
+    }
+  ],
+  "contacts": [
+    {
+      "type": "email",
+      "lbl": "vhoundete@gmail.com",
+      "lnk": "mailto:vhoundete@gmail.com"
+    },
+    {
+      "type": "linkedin",
+      "lbl": "linkedin.com/in/venancehoundete",
+      "lnk": "https://linkedin.com/in/venancehoundete"
+    },
+    {
+      "type": "phone",
+      "lbl": "+229 01 69 95 94 07",
+      "lnk": "tel:+22901699559407"
+    }
   ]
 };
 
-function loadD(){try{return JSON.parse(localStorage.getItem('vhD'))||DEF;}catch(e){return DEF;}}
-function saveD(d){localStorage.setItem('vhD',JSON.stringify(d));}
-let D=loadD();
+// ══════ ÉTAT
+let D = JSON.parse(JSON.stringify(DEF)); // données actuelles
+let lang = 'fr';
+let logged = false;
 
-// ══════ LANG
-let lang='fr';
+// Config GitHub (stockée dans sessionStorage pour la session)
+function getGHConfig(){
+  return {
+    user: sessionStorage.getItem('gh_user')||'',
+    repo: sessionStorage.getItem('gh_repo')||'',
+    token: sessionStorage.getItem('gh_token')||''
+  };
+}
+function setGHConfig(u,r,t){
+  sessionStorage.setItem('gh_user',u);
+  sessionStorage.setItem('gh_repo',r);
+  sessionStorage.setItem('gh_token',t);
+}
+
+// ══════ ICONES
+const ICONS={
+  email:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>',
+  phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
+  linkedin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>',
+  github:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>',
+  whatsapp:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>',
+  autre:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>'
+};
+
+// ══════ TYPAGE ANIMÉ
 const phFR=['Expert en Cybersécurité','Gouvernance des Systèmes d\'Information','Conformité ISO 27001','Protection des Données'];
 const phEN=['Cybersecurity Expert','IS Governance Specialist','ISO 27001 Compliance','Data Protection'];
 let phArr=phFR,pi=0,ci=0,isDel=false;
@@ -514,53 +1090,32 @@ type();
 function setLang(l){
   lang=l;
   document.querySelectorAll('.lang-btn').forEach(b=>b.classList.toggle('active',b.textContent.includes(l.toUpperCase())));
-  document.documentElement.lang=l;
-  document.querySelectorAll('[data-'+l+']').forEach(el=>{
-    const v=el.getAttribute('data-'+l);
-    if(!v)return;
-    if(el.tagName==='INPUT'||el.tagName==='TEXTAREA')el.placeholder=v;
-    else el.innerHTML=v;
-  });
   phArr=l==='en'?phEN:phFR; pi=0;ci=0;isDel=false;
   render();
 }
 
-// ══════ ICONES CONTACT
-const ICONS={
-  email:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>',
-  phone:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>',
-  linkedin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>',
-  github:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>',
-  whatsapp:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>',
-  autre:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>'
-};
-
-// ══════ RENDER
-function esc(s){return(s||'').replace(/"/g,'&quot;').replace(/</g,'&lt;');}
-
+// ══════ RENDER SITE
 function render(){
-  // INFOS
   document.getElementById('hero-desc').textContent=D.infos.hero;
   document.getElementById('stat1-num').textContent=D.infos.s1n;
   document.getElementById('stat1-lbl').textContent=D.infos.s1l;
-  document.getElementById('footer-mail').textContent=D.contacts[0]?D.contacts[0].lbl:'';
-  // about
+  const fmail=D.contacts.find(c=>c.type==='email');
+  document.getElementById('footer-mail').textContent=fmail?fmail.lbl:'';
+
   document.getElementById('about-body').innerHTML=D.infos.about.split('\n\n').filter(p=>p.trim()).map(p=>`<p>${p}</p>`).join('');
-  // info cards
   document.getElementById('info-list').innerHTML=`
-    <div class="info-item"><div class="info-label" data-fr="Localisation" data-en="Location">${lang==='en'?'Location':'Localisation'}</div><div class="info-val">${D.infos.loc}</div></div>
-    <div class="info-item"><div class="info-label" data-fr="Spécialité" data-en="Specialty">${lang==='en'?'Specialty':'Spécialité'}</div><div class="info-val">${D.infos.spec}</div></div>
-    <div class="info-item"><div class="info-label" data-fr="Langues" data-en="Languages">${lang==='en'?'Languages':'Langues'}</div><div class="info-val">${D.infos.langs}</div></div>
-    <div class="info-item"><div class="info-label" data-fr="Disponibilité" data-en="Availability">${lang==='en'?'Availability':'Disponibilité'}</div><div class="info-val">${D.infos.avail}</div></div>`;
-  // SERVICES
+    <div class="info-item"><div class="info-label">${lang==='en'?'Location':'Localisation'}</div><div class="info-val">${D.infos.loc}</div></div>
+    <div class="info-item"><div class="info-label">${lang==='en'?'Specialty':'Spécialité'}</div><div class="info-val">${D.infos.spec}</div></div>
+    <div class="info-item"><div class="info-label">${lang==='en'?'Languages':'Langues'}</div><div class="info-val">${D.infos.langs}</div></div>
+    <div class="info-item"><div class="info-label">${lang==='en'?'Availability':'Disponibilité'}</div><div class="info-val">${D.infos.avail}</div></div>`;
+
   document.getElementById('services-grid').innerHTML=D.services.map(s=>`
     <div class="service-card">
-      <div class="svc-icon">${s.ico}</div>
-      <div class="svc-line"></div>
+      <div class="svc-icon">${s.ico}</div><div class="svc-line"></div>
       <div class="svc-name">${lang==='en'?s.nome:s.nom}</div>
       <div class="svc-text">${lang==='en'?s.desce:s.desc}</div>
     </div>`).join('');
-  // PROJECTS
+
   document.getElementById('projects-grid').innerHTML=D.projects.map(p=>`
     <div class="project-card">
       <div class="p-badge">${p.badge}</div>
@@ -570,7 +1125,7 @@ function render(){
       <ul class="p-list">${(lang==='en'?p.bule:p.bul).map(b=>`<li>${b}</li>`).join('')}</ul>
       <div class="p-chips">${p.tags.map(t=>`<span class="chip">${t}</span>`).join('')}</div>
     </div>`).join('');
-  // SKILLS
+
   const cats=[...new Set(D.skills.map(s=>s.c))];
   document.getElementById('skills-layout').innerHTML=cats.map(cat=>`
     <div class="skill-group">
@@ -582,19 +1137,19 @@ function render(){
         </div>`).join('')}
     </div>`).join('');
   document.getElementById('tools-chips').innerHTML=D.tools.map(t=>`<div class="tool">${t}</div>`).join('');
-  // PARCOURS
+
   document.getElementById('edu-timeline').innerHTML=D.edu.map(e=>`
     <div class="tl-item"><div class="tl-date">${e.d}</div><div class="tl-name">${e.n}</div><div class="tl-sub">${e.o}</div></div>`).join('');
   document.getElementById('cert-timeline').innerHTML=D.certs.map(c=>`
     <div class="tl-item"><div class="tl-date">${c.d}</div><div class="tl-name">${c.n}</div><div class="tl-sub">${c.o}</div></div>`).join('');
-  // CONTACT
+
   document.getElementById('contact-grid').innerHTML=D.contacts.map(c=>`
     <a href="${c.lnk}" class="contact-card" target="_blank">${ICONS[c.type]||ICONS.autre}${c.lbl}</a>`).join('');
-  // Scroll & bars
+
   observeAll();
 }
 
-// ══════ SCROLL
+// ══════ SCROLL ANIM
 function observeAll(){
   const obs=new IntersectionObserver(entries=>{
     entries.forEach((e,i)=>{
@@ -608,31 +1163,340 @@ function observeAll(){
   document.querySelectorAll('.fu:not(.vis)').forEach(el=>obs.observe(el));
 }
 
-// ══════ ADMIN
-let logged=false;
+// ══════ TOAST
+function toast(msg, err=false){
+  const t=document.getElementById('toast');
+  t.textContent=msg;
+  t.className=err?'show err':'show';
+  setTimeout(()=>t.className='',2800);
+}
+
+// ══════ GITHUB API
+async function githubSave(newData){
+  const cfg=getGHConfig();
+  if(!cfg.token||!cfg.user||!cfg.repo){
+    toast('⚠ Configurez GitHub dans l\'onglet 🔗 GitHub d\'abord !', true);
+    return false;
+  }
+
+  const fileUrl=`https://api.github.com/repos/${cfg.user}/${cfg.repo}/contents/index.html`;
+  const headers={'Authorization':`token ${cfg.token}`,'Content-Type':'application/json'};
+
+  // 1. Récupérer le SHA actuel
+  let sha='';
+  try{
+    const r=await fetch(fileUrl,{headers});
+    if(!r.ok) throw new Error('Impossible de lire le fichier');
+    const j=await r.json();
+    sha=j.sha;
+  }catch(e){
+    toast('❌ Erreur GitHub : impossible de lire le fichier. Vérifiez votre config.', true);
+    return false;
+  }
+
+  // 2. Générer le nouveau HTML avec les données mises à jour
+  const newHtml = buildHtml(newData);
+  const encoded = btoa(unescape(encodeURIComponent(newHtml)));
+
+  // 3. Pousser la mise à jour
+  try{
+    const r=await fetch(fileUrl,{
+      method:'PUT',
+      headers,
+      body:JSON.stringify({
+        message:'Portfolio mis à jour via panel admin',
+        content:encoded,
+        sha
+      })
+    });
+    if(!r.ok){
+      const err=await r.json();
+      throw new Error(err.message||'Erreur inconnue');
+    }
+    return true;
+  }catch(e){
+    toast(`❌ Erreur GitHub : ${e.message}`, true);
+    return false;
+  }
+}
+
+// ══════ CONSTRUCTION HTML COMPLET POUR GITHUB
+function buildHtml(data){
+  // On prend le HTML actuel de la page et on injecte les nouvelles données
+  // en remplaçant le bloc de données dans le script
+  const marker_start = '// ══════ DONNÉES PAR DÉFAUT';
+  const marker_end = '// ══════ ÉTAT';
+  const currentHtml = document.documentElement.outerHTML;
+  
+  const newDataBlock = `// ══════ DONNÉES PAR DÉFAUT
+const DEF = ${JSON.stringify(data, null, 2)};
+
+`;
+
+  const startIdx = currentHtml.indexOf(marker_start);
+  const endIdx = currentHtml.indexOf(marker_end);
+  
+  if(startIdx === -1 || endIdx === -1) return currentHtml;
+  
+  return currentHtml.slice(0, startIdx) + newDataBlock + currentHtml.slice(endIdx);
+}
+
+// ══════ PROGRESS
+function showProg(id, txt='Sauvegarde sur GitHub…'){
+  const el=document.getElementById('prog-'+id);
+  if(el){
+    el.classList.add('show');
+    const span=el.querySelector('span');
+    if(span) span.textContent=txt;
+  }
+}
+function hideProg(id){ 
+  const el=document.getElementById('prog-'+id);
+  if(el) el.classList.remove('show');
+}
+
+// ══════ ADMIN OUVERTURE/FERMETURE
 function openAdmin(){
   document.getElementById('admin-overlay').classList.add('open');
-  if(logged){showPanel();}
+  if(logged) showPanel();
+  else{
+    document.getElementById('adm-login').style.display='flex';
+    document.getElementById('adm-content').style.display='none';
+    setTimeout(()=>document.getElementById('adm-pw').focus(),100);
+  }
 }
 function closeAdmin(){document.getElementById('admin-overlay').classList.remove('open');}
-document.getElementById('admin-overlay').addEventListener('click',e=>{if(e.target.id==='admin-overlay')closeAdmin();});
+
 function checkPw(){
-  if(document.getElementById('adm-pw').value===PASS){logged=true;document.getElementById('lg-err').style.display='none';showPanel();}
-  else{document.getElementById('lg-err').style.display='block';document.getElementById('adm-pw').value='';}
+  const pw=document.getElementById('adm-pw').value;
+  if(pw===PASS){
+    logged=true;
+    document.getElementById('lg-err').style.display='none';
+    showPanel();
+  }else{
+    document.getElementById('lg-err').style.display='block';
+    document.getElementById('adm-pw').value='';
+    document.getElementById('adm-pw').focus();
+  }
 }
+
 function showPanel(){
   document.getElementById('adm-login').style.display='none';
   document.getElementById('adm-content').style.display='flex';
   fillForms();
+  updateGHStatus();
 }
-function showTab(id,btn){
-  document.querySelectorAll('.adm-sec').forEach(s=>s.classList.remove('active'));
-  document.querySelectorAll('.adm-tab').forEach(t=>t.classList.remove('active'));
-  document.getElementById(id).classList.add('active');
-  btn.classList.add('active');
-}
-function toast(m){const t=document.getElementById('toast');t.textContent=m;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2500);}
 
+// ══════ ONGLETS
+document.querySelectorAll('.adm-tab').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.adm-tab').forEach(t=>t.classList.remove('active'));
+    document.querySelectorAll('.adm-sec').forEach(s=>s.classList.remove('active'));
+    btn.classList.add('active');
+    const target=btn.dataset.tab;
+    if(target) document.getElementById(target).classList.add('active');
+  });
+});
+
+// ══════ BOUTONS EVENTS
+document.getElementById('admin-trigger').addEventListener('click', openAdmin);
+document.getElementById('btn-close-admin').addEventListener('click', closeAdmin);
+document.getElementById('btn-cancel-login').addEventListener('click', closeAdmin);
+document.getElementById('admin-overlay').addEventListener('click',e=>{
+  if(e.target.id==='admin-overlay') closeAdmin();
+});
+document.getElementById('adm-pw').addEventListener('keydown',e=>{
+  if(e.key==='Enter') checkPw();
+});
+document.getElementById('btn-login').addEventListener('click', checkPw);
+
+// GitHub config
+document.getElementById('btn-gh-save').addEventListener('click',()=>{
+  const u=document.getElementById('gh-user').value.trim();
+  const r=document.getElementById('gh-repo').value.trim();
+  const t=document.getElementById('gh-token').value.trim();
+  if(!u||!r||!t){toast('⚠ Remplis tous les champs GitHub',true);return;}
+  setGHConfig(u,r,t);
+  toast('✅ Config GitHub sauvegardée !');
+  updateGHStatus();
+});
+
+document.getElementById('btn-gh-test').addEventListener('click', async()=>{
+  const cfg=getGHConfig();
+  if(!cfg.token){toast('⚠ Entre d\'abord ton token',true);return;}
+  const btn=document.getElementById('btn-gh-test');
+  btn.disabled=true; btn.textContent='🔍 Test en cours…';
+  try{
+    const r=await fetch(`https://api.github.com/repos/${cfg.user}/${cfg.repo}/contents/index.html`,{
+      headers:{'Authorization':`token ${cfg.token}`}
+    });
+    if(r.ok){
+      toast('✅ Connexion GitHub réussie ! Tout est prêt.');
+      updateGHStatus(true);
+    }else{
+      const e=await r.json();
+      toast(`❌ Erreur : ${e.message}`,true);
+      updateGHStatus(false);
+    }
+  }catch(e){
+    toast('❌ Impossible de joindre GitHub',true);
+  }
+  btn.disabled=false; btn.textContent='🔍 Tester la connexion';
+});
+
+function updateGHStatus(ok=null){
+  const cfg=getGHConfig();
+  const badge=document.getElementById('gh-status-badge');
+  if(cfg.user) document.getElementById('gh-user').value=cfg.user;
+  if(cfg.repo) document.getElementById('gh-repo').value=cfg.repo;
+  if(cfg.token) document.getElementById('gh-token').value=cfg.token;
+  
+  if(ok===true){badge.className='github-status ok';badge.textContent='✅ Connecté';}
+  else if(ok===false){badge.className='github-status nok';badge.textContent='❌ Erreur';}
+  else if(cfg.token){badge.className='github-status none';badge.textContent='⚙ Configuré (non testé)';}
+  else{badge.className='github-status none';badge.textContent='Non configuré';}
+}
+
+// ══════ SAVE INFOS
+document.getElementById('btn-save-infos').addEventListener('click', async()=>{
+  D.infos={
+    loc:document.getElementById('f-loc').value,
+    avail:document.getElementById('f-avail').value,
+    spec:document.getElementById('f-spec').value,
+    langs:document.getElementById('f-langs').value,
+    hero:document.getElementById('f-hero').value,
+    about:document.getElementById('f-about').value,
+    s1n:document.getElementById('f-s1n').value,
+    s1l:document.getElementById('f-s1l').value
+  };
+  render();
+  showProg('infos');
+  const ok=await githubSave(D);
+  hideProg('infos');
+  if(ok) toast('✅ Infos publiées ! Visible dans ~1 min.');
+});
+
+// ══════ SERVICES
+document.getElementById('btn-add-svc').addEventListener('click', async()=>{
+  const n=document.getElementById('s-nom').value.trim();
+  if(!n){toast('⚠ Remplis le nom du service',true);return;}
+  D.services.push({
+    ico:document.getElementById('s-ico').value||'🔧',
+    nom:n,
+    desc:document.getElementById('s-desc').value,
+    nome:document.getElementById('s-nome').value||n,
+    desce:document.getElementById('s-desce').value||document.getElementById('s-desc').value
+  });
+  render(); fillForms();
+  ['s-ico','s-nom','s-desc','s-nome','s-desce'].forEach(id=>document.getElementById(id).value='');
+  showProg('services');
+  const ok=await githubSave(D);
+  hideProg('services');
+  if(ok) toast('✅ Service publié !');
+});
+
+// ══════ PROJETS
+document.getElementById('btn-add-prj').addEventListener('click', async()=>{
+  const t=document.getElementById('p-tit').value.trim();
+  if(!t){toast('⚠ Remplis le titre du projet',true);return;}
+  D.projects.push({
+    tit:t,
+    tite:document.getElementById('p-tite').value||t,
+    org:document.getElementById('p-org').value,
+    date:document.getElementById('p-date').value,
+    badge:document.getElementById('p-badge').value||'Projet',
+    bul:document.getElementById('p-bul').value.split('\n').filter(l=>l.trim()),
+    bule:document.getElementById('p-bule').value.split('\n').filter(l=>l.trim()),
+    tags:document.getElementById('p-tags').value.split(',').map(x=>x.trim()).filter(Boolean)
+  });
+  render(); fillForms();
+  ['p-tit','p-tite','p-org','p-date','p-badge','p-bul','p-bule','p-tags'].forEach(id=>document.getElementById(id).value='');
+  showProg('projects');
+  const ok=await githubSave(D);
+  hideProg('projects');
+  if(ok) toast('✅ Projet publié !');
+});
+
+// ══════ COMPÉTENCES
+document.getElementById('btn-add-sk').addEventListener('click', async()=>{
+  const n=document.getElementById('sk-n').value.trim();
+  if(!n) return;
+  D.skills.push({n,c:document.getElementById('sk-c').value||'Autres',l:parseInt(document.getElementById('sk-l').value)||70});
+  render(); fillForms();
+  ['sk-n','sk-c','sk-l'].forEach(id=>document.getElementById(id).value='');
+  showProg('skills');
+  const ok=await githubSave(D);
+  hideProg('skills');
+  if(ok) toast('✅ Compétence publiée !');
+});
+
+document.getElementById('btn-add-tool').addEventListener('click', async()=>{
+  const n=document.getElementById('tk-n').value.trim();
+  if(!n) return;
+  D.tools.push(n);
+  render(); fillForms();
+  document.getElementById('tk-n').value='';
+  showProg('skills');
+  const ok=await githubSave(D);
+  hideProg('skills');
+  if(ok) toast('✅ Outil publié !');
+});
+
+// ══════ PARCOURS
+document.getElementById('btn-add-edu').addEventListener('click', async()=>{
+  const n=document.getElementById('e-n').value.trim();
+  if(!n) return;
+  D.edu.push({n,o:document.getElementById('e-o').value,d:document.getElementById('e-d').value});
+  render(); fillForms();
+  ['e-n','e-o','e-d'].forEach(id=>document.getElementById(id).value='');
+  showProg('parcours');
+  const ok=await githubSave(D);
+  hideProg('parcours');
+  if(ok) toast('✅ Formation publiée !');
+});
+
+document.getElementById('btn-add-cert').addEventListener('click', async()=>{
+  const n=document.getElementById('c-n').value.trim();
+  if(!n) return;
+  D.certs.push({n,o:document.getElementById('c-o').value,d:document.getElementById('c-d').value});
+  render(); fillForms();
+  ['c-n','c-o','c-d'].forEach(id=>document.getElementById(id).value='');
+  showProg('parcours');
+  const ok=await githubSave(D);
+  hideProg('parcours');
+  if(ok) toast('✅ Certification publiée !');
+});
+
+// ══════ CONTACT
+document.getElementById('btn-add-ct').addEventListener('click', async()=>{
+  const l=document.getElementById('ct-lbl').value.trim();
+  if(!l) return;
+  D.contacts.push({
+    type:document.getElementById('ct-type').value,
+    lbl:l,
+    lnk:document.getElementById('ct-lnk').value
+  });
+  render(); fillForms();
+  ['ct-lbl','ct-lnk'].forEach(id=>document.getElementById(id).value='');
+  showProg('contact');
+  const ok=await githubSave(D);
+  hideProg('contact');
+  if(ok) toast('✅ Contact publié !');
+});
+
+// ══════ SUPPRIMER ÉLÉMENT
+window.delItem=async function(key,i){
+  if(!confirm('Supprimer cet élément ?')) return;
+  D[key].splice(i,1);
+  render(); fillForms();
+  const progKey = {services:'services',projects:'projects',skills:'skills',tools:'skills',edu:'parcours',certs:'parcours',contacts:'contact'}[key]||key;
+  showProg(progKey,'Suppression en cours…');
+  const ok=await githubSave(D);
+  hideProg(progKey);
+  if(ok) toast('✅ Supprimé et publié !');
+};
+
+// ══════ REMPLIR LES FORMULAIRES
 function fillForms(){
   document.getElementById('f-loc').value=D.infos.loc;
   document.getElementById('f-avail').value=D.infos.avail;
@@ -642,63 +1506,27 @@ function fillForms(){
   document.getElementById('f-about').value=D.infos.about;
   document.getElementById('f-s1n').value=D.infos.s1n;
   document.getElementById('f-s1l').value=D.infos.s1l;
-  // listes
-  renderAdmList('svc-list-adm',D.services,'services',s=>`${s.ico} ${s.nom}`);
-  renderAdmList('prj-list-adm',D.projects,'projects',p=>`${p.tit}`,p=>`${p.org} · ${p.date}`);
-  renderAdmList('sk-list-adm',D.skills,'skills',s=>`${s.n}`,s=>`${s.c} · ${s.l}%`);
-  renderAdmList('edu-list-adm',D.edu,'edu',e=>e.n,e=>`${e.o} · ${e.d}`);
-  renderAdmList('cert-list-adm',D.certs,'certs',c=>c.n,c=>`${c.o} · ${c.d}`);
-  renderAdmList('ct-list-adm',D.contacts,'contacts',c=>c.lbl,c=>c.type);
+  renderList('svc-list-adm',D.services,'services',s=>`${s.ico} ${s.nom}`);
+  renderList('prj-list-adm',D.projects,'projects',p=>p.tit,p=>`${p.org} · ${p.date}`);
+  renderList('sk-list-adm',D.skills,'skills',s=>s.n,s=>`${s.c} · ${s.l}%`);
+  renderList('edu-list-adm',D.edu,'edu',e=>e.n,e=>`${e.o} · ${e.d}`);
+  renderList('cert-list-adm',D.certs,'certs',c=>c.n,c=>`${c.o} · ${c.d}`);
+  renderList('ct-list-adm',D.contacts,'contacts',c=>c.lbl,c=>c.type);
 }
-function renderAdmList(containerId,arr,key,nameFn,subFn=()=>''){
-  document.getElementById(containerId).innerHTML=arr.length?arr.map((item,i)=>`
-    <div class="item-e">
-      <div><div class="item-e-name">${nameFn(item)}</div><div class="item-e-sub">${subFn(item)}</div></div>
-      <div class="item-e-acts"><button class="ib del" onclick="delItem('${key}',${i})">✕ Supprimer</button></div>
-    </div>`).join(''):`<div style="color:var(--gray);font-size:13px">Aucun élément pour l'instant.</div>`;
-}
-function delItem(key,i){D[key].splice(i,1);saveD(D);render();fillForms();toast('✅ Supprimé !');}
 
-function saveInfos(){
-  D.infos={loc:document.getElementById('f-loc').value,avail:document.getElementById('f-avail').value,spec:document.getElementById('f-spec').value,langs:document.getElementById('f-langs').value,hero:document.getElementById('f-hero').value,about:document.getElementById('f-about').value,s1n:document.getElementById('f-s1n').value,s1l:document.getElementById('f-s1l').value};
-  saveD(D);render();toast('✅ Infos enregistrées !');
+function renderList(cid,arr,key,nameFn,subFn=()=>''){
+  document.getElementById(cid).innerHTML=arr.length
+    ? arr.map((item,i)=>`
+        <div class="item-e">
+          <div><div class="item-e-name">${nameFn(item)}</div><div class="item-e-sub">${subFn(item)}</div></div>
+          <div><button class="ib del" onclick="delItem('${key}',${i})">✕ Supprimer</button></div>
+        </div>`).join('')
+    : '<div style="color:var(--gray);font-size:13px">Aucun élément.</div>';
 }
-function addService(){
-  const n=document.getElementById('s-nom').value.trim();if(!n){alert('Remplis le nom');return;}
-  D.services.push({ico:document.getElementById('s-ico').value||'🔧',nom:n,desc:document.getElementById('s-desc').value,nome:document.getElementById('s-nome').value||n,desce:document.getElementById('s-desce').value||document.getElementById('s-desc').value});
-  saveD(D);render();fillForms();['s-ico','s-nom','s-desc','s-nome','s-desce'].forEach(id=>document.getElementById(id).value='');toast('✅ Service ajouté !');
-}
-function addProject(){
-  const t=document.getElementById('p-tit').value.trim();if(!t){alert('Remplis le titre');return;}
-  D.projects.push({tit:t,tite:document.getElementById('p-tite').value||t,org:document.getElementById('p-org').value,date:document.getElementById('p-date').value,badge:document.getElementById('p-badge').value||'Projet',bul:document.getElementById('p-bul').value.split('\n').filter(l=>l.trim()),bule:document.getElementById('p-bule').value.split('\n').filter(l=>l.trim()),tags:document.getElementById('p-tags').value.split(',').map(t=>t.trim()).filter(Boolean)});
-  saveD(D);render();fillForms();['p-tit','p-tite','p-org','p-date','p-badge','p-bul','p-bule','p-tags'].forEach(id=>document.getElementById(id).value='');toast('✅ Projet ajouté !');
-}
-function addSkill(){
-  const n=document.getElementById('sk-n').value.trim();if(!n)return;
-  D.skills.push({n,c:document.getElementById('sk-c').value||'Autres',l:parseInt(document.getElementById('sk-l').value)||70});
-  saveD(D);render();fillForms();['sk-n','sk-c','sk-l'].forEach(id=>document.getElementById(id).value='');toast('✅ Compétence ajoutée !');
-}
-function addTool(){
-  const n=document.getElementById('tk-n').value.trim();if(!n)return;
-  D.tools.push(n);saveD(D);render();fillForms();document.getElementById('tk-n').value='';toast('✅ Outil ajouté !');
-}
-function addEdu(){
-  const n=document.getElementById('e-n').value.trim();if(!n)return;
-  D.edu.push({n,o:document.getElementById('e-o').value,d:document.getElementById('e-d').value});
-  saveD(D);render();fillForms();['e-n','e-o','e-d'].forEach(id=>document.getElementById(id).value='');toast('✅ Formation ajoutée !');
-}
-function addCert(){
-  const n=document.getElementById('c-n').value.trim();if(!n)return;
-  D.certs.push({n,o:document.getElementById('c-o').value,d:document.getElementById('c-d').value});
-  saveD(D);render();fillForms();['c-n','c-o','c-d'].forEach(id=>document.getElementById(id).value='');toast('✅ Certification ajoutée !');
-}
-function addContact(){
-  const l=document.getElementById('ct-lbl').value.trim();if(!l)return;
-  D.contacts.push({type:document.getElementById('ct-type').value,lbl:l,lnk:document.getElementById('ct-lnk').value});
-  saveD(D);render();fillForms();['ct-lbl','ct-lnk'].forEach(id=>document.getElementById(id).value='');toast('✅ Contact ajouté !');
-}
-// INIT
+
+// ══════ INIT
 render();
 </script>
-</body>
-</html>
+
+
+</body></html>
